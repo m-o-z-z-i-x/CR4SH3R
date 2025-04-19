@@ -1,0 +1,16 @@
+# ---> IDE
+.cursor
+.cursorignore
+
+# ---> PYTHON
+__pycache__
+
+# pyenv
+.venv
+
+# ---> CUSTOM
+res/vpaths/DEFAULT-147.txt
+
+# distribution / packaging
+dist/*
+!dist/.gitkeep
