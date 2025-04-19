@@ -41,8 +41,8 @@ command = [
   f"--file-description={description}", # file description
 
   # dependency control
-	f"--include-data-file={os.path.abspath('.env.encrypted')}=.env.encrypted", # include encrypted file
-  "--include-module=urllib3.contrib.resolver.system", # force-include urllib3's system resolver module
+  "--include-package=urllib3",
+	f"--include-data-file={os.path.abspath('.env')}=.env", # include encrypted file
 
   # optimization
   "--enable-plugin=upx", # enable upx compression
@@ -61,16 +61,11 @@ run(command)
 # distribution structure
 distPath = os.path.join("dist")
 
-# remove existing dist directory if it exists
-if os.path.exists(distPath):
-  shutil.rmtree(distPath)
-
-# create dist directory and subdirectories
-os.makedirs(distPath)
-
+# create res directory in dist
 resPath = os.path.join(distPath, "res")
 
-os.makedirs(resPath)
+if not os.path.exists(resPath):
+  os.makedirs(resPath)
 
 # copy resources
 resources = [

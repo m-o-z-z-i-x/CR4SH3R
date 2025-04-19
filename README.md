@@ -1,12 +1,12 @@
 # CR4SH3R
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/m-o-z-z-i-x/CR4SH3R?style=for-the-badge)](https://github.com/m-o-z-z-i-x/CR4SH3R/releases)
 ![Last Commit](https://img.shields.io/github/last-commit/m-o-z-z-i-x/CR4SH3R?v=1&style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/m-o-z-z-i-x/CR4SH3R?v=1&style=for-the-badge)
 
 Vulnerability scanner designed to detect [Arbitrary File Download](https://owasp.org/www-community/attacks/Path_Traversal) flaws in WordPress plugins.
-It scans websites using a predefined set of paths to extract sensitive data such as database credentials from `wp-config.php`
+It scans a website using a predefined set of paths to extract sensitive data such as database credentials from `wp-config.php`
 
 > [!CAUTION]
 >
@@ -29,12 +29,6 @@ It scans websites using a predefined set of paths to extract sensitive data such
 - **📊 Excel (XLSX) reports** - Clean, organized export of all findings for further analysis
 - **🧩 Extendable payloads** - Custom vulnerability paths can be added to expand detection capabilities
 - **🖥️ User-friendly GUI** - Intuitive graphical interface for easy operation
-
----
-
-## 📥 Download
-
-![Latest Release](https://img.shields.io/github/v/release/m-o-z-z-i-x/CR4SH3R?style=for-the-badge)
 
 ---
 
@@ -122,7 +116,7 @@ Contributions are welcome! Here’s how to help improve the project:
   ```bash
   git push origin feature/your-feature-name
   ```
-- **Open a Pull Request** to the main branch of this repository
+- **Open a Pull Request** to the master branch of this repository
 
 ---
 
@@ -144,7 +138,7 @@ All my contact links are available [here](https://github.com/m-o-z-z-i-x/m-o-z-z
 
 ---
 
-> ⭐ **Star the project if you like it!**
+> ⭐ **Love this project? Give it a star!**
 
 ---
 
