@@ -128,6 +128,9 @@ If you find this tool helpful and want to support its development — consider b
   <a href="https://yoomoney.ru/to/4100118628464111" target="_blank">
     <img src="./res/logos/yoomoney.jpg" width="150px" alt="YooMoney">
   </a>
+  <a href="https://app.tonkeeper.com/transfer/UQBZVRZFeZI4CepVq_OF5_KiQ_oo62SzmWlGvppfGuyRqUSE" target="_blank">
+    <img src="https://img.shields.io/badge/TON-0098EA?style=for-the-badge&logo=ton&logoColor=white" alt="TON">
+  </a>
 </p>
 
 ---
