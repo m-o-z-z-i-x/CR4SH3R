@@ -48,6 +48,14 @@ Using this tool is very simple:
 
 ## 🔨 Develop
 
+### 🔧 Requirements
+
+- **Python 3.12.x**
+- **PyQt5** — for GUI development
+- **openpyxl** — for XLSX report generation
+- **niquests** — for HTTP requests
+- **dotenv** / python-dotenv — for environment variables management
+
 ### ⚡️ Quick Setup Guide
 
 - **Download [Python](https://www.python.org/downloads)**
@@ -71,7 +79,7 @@ Using this tool is very simple:
   pip install -r requirements.txt
   ```
 
-### 🎨 GUI (PyQt5)
+### 🎨 GUI
   - Open `gui.ui` file in `Designer`:
     ```bash
     .venv/Lib/site-packages/QtDesigner/designer.exe
@@ -101,7 +109,7 @@ Using this tool is very simple:
 
 ## 🤝 Contribution
 
-Contributions are welcome! Here’s how to help improve the project:
+Contributions are welcome! Here's how to help improve the project:
 
 - **Fork the repository**
 - **Create a feature branch**:
@@ -120,7 +128,14 @@ Contributions are welcome! Here’s how to help improve the project:
 
 ---
 
+## 📈 Repo Activity
+<img src="https://repobeats.axiom.co/api/embed/4ff04cc25243b8fda414946a684e1f8a3cbc4e4e.svg" width="100%" alt="Repobeats analytics image">
+
+---
+
 ## 🙏 Support
+
+> ⭐ **Love this project? Give it a star!**
 
 If you find this tool helpful and want to support its development — consider buying me a coffee!
 
@@ -128,9 +143,12 @@ If you find this tool helpful and want to support its development — consider b
   <a href="https://yoomoney.ru/to/4100118628464111" target="_blank">
     <img src="./res/logos/yoomoney.jpg" width="150px" alt="YooMoney">
   </a>
-  <a href="https://app.tonkeeper.com/transfer/UQBZVRZFeZI4CepVq_OF5_KiQ_oo62SzmWlGvppfGuyRqUSE" target="_blank">
-    <img src="https://img.shields.io/badge/TON-0098EA?style=for-the-badge&logo=ton&logoColor=white" alt="TON">
+  <a href="https://boosty.to/m-o-z-z-i-x/donate" target="_blank">
+    <img src="./res/logos/boosty.png" width="150px" alt="Boosty">
   </a>
+  <br><br>
+  <b>TON Address:</b>
+  <blockquote>UQBZVRZFeZI4CepVq_OF5_KiQ_oo62SzmWlGvppfGuyRqUSE</blockquote>
 </p>
 
 ---
@@ -141,10 +159,6 @@ All my contact links are available [here](https://github.com/m-o-z-z-i-x/m-o-z-z
 
 ---
 
-> ⭐ **Love this project? Give it a star!**
-
----
-
-## 📃 License
+## 📝 License
 
 This project is licensed under the [MIT License](./LICENSE)
