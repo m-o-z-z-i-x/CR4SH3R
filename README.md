@@ -141,10 +141,10 @@ If you find this tool helpful and want to support its development — consider b
 
 <p align="left">
   <a href="https://yoomoney.ru/to/4100118628464111" target="_blank">
-    <img src="./res/logos/yoomoney.jpg" width="150px" alt="YooMoney">
+    <img src="https://raw.githubusercontent.com/m-o-z-z-i-x/m-o-z-z-i-x/main/res/logos/yoomoney.jpg" width="150px" alt="YooMoney">
   </a>
   <a href="https://boosty.to/m-o-z-z-i-x/donate" target="_blank">
-    <img src="./res/logos/boosty.png" width="150px" alt="Boosty">
+    <img src="https://raw.githubusercontent.com/m-o-z-z-i-x/m-o-z-z-i-x/main/res/logos/boosty.png" width="150px" alt="Boosty">
   </a>
   <br><br>
   <b>TON Address:</b>
