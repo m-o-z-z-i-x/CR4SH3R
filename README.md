@@ -53,7 +53,7 @@ Using this tool is very simple:
 - Python 3.12+
 - Essential packages:
   ```bash
-  PyQt5 openpyxl niquests dotenv
+  Nuitka PyQt5 openpyxl niquests python-dotenv
   ```
 
 ### ⚡️ Quick Setup Guide

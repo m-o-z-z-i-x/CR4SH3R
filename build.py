@@ -17,9 +17,9 @@ appName = os.getenv("APP_NAME")
 appVersion = os.getenv("APP_VERSION")
 description = os.getenv("DESCRIPTION")
 command = [
-  ".venv\\scripts\\nuitka.cmd",
+  ".venv\\Scripts\\nuitka.cmd",
 
-  # compilation mode options
+  # compilation options
   "--standalone", # create self-contained distribution
   "--onefile", # create single executable
   "--windows-console-mode=disable", # disable console for pyqt5 app
@@ -41,8 +41,8 @@ command = [
   f"--file-description={description}", # file description
 
   # dependency control
-  "--include-package=urllib3",
 	f"--include-data-file={os.path.abspath('.env')}=.env", # include encrypted file
+  "--include-package=urllib3", # follow all urllib3 imports recursively
 
   # optimization
   "--enable-plugin=upx", # enable upx compression
@@ -56,7 +56,7 @@ command = [
   "main.py"
 ]
 
-run(command)
+run(command, shell=True)
 
 # distribution structure
 distPath = os.path.join("dist")
