@@ -156,7 +156,7 @@ class Controller():
     if self.vulnerablePathList != "":
       # checking the path for the existence of a file
       if not path.exists(self.vulnerablePathList):
-        return ui.logPanel.setPlainText(f"[!] Vulnerable path list «{path.basename(self.vulnerablePathList.split("./")[-1])}» does not exist")
+        return ui.logPanel.setPlainText(f"[!] Vulnerable path list «{path.basename(self.vulnerablePathList.split('./')[-1])}» does not exist")
 
       # checking the file size
       if stat(self.vulnerablePathList).st_size == 0:
@@ -187,7 +187,7 @@ class Controller():
     # determining the start time of the execution
     startTime = datetime.now()
 
-    ui.logPanel.setPlainText(f"[!] START - {str(startTime.strftime("%H:%M:%S"))}\n")
+    ui.logPanel.setPlainText(f"[!] START - {str(startTime.strftime('%H:%M:%S'))}\n")
 
     # definition of a new (separate from main ui) thread, for the working
     self.worker = Worker()
@@ -254,7 +254,7 @@ class Controller():
     self.thread.finished.connect(lambda: ui.copyLogs_button.setEnabled(True))
     self.thread.finished.connect(lambda: ui.clearLogs_button.setEnabled(True))
 
-    self.thread.finished.connect(lambda: ui.logPanel.appendPlainText(f"\n[!] END - {str(datetime.now().strftime("%H:%M:%S"))} ({str(round((datetime.now() - startTime).total_seconds(), 2))}s)"))
+    self.thread.finished.connect(lambda: ui.logPanel.appendPlainText(f"\n[!] END - {str(datetime.now().strftime('%H:%M:%S'))} ({str(round((datetime.now() - startTime).total_seconds(), 2))}s)"))
 
     # updating progress bar value
     self.worker.progress.connect(lambda value: ui.progressBar.setValue(value))
@@ -396,7 +396,7 @@ class Worker(QtCore.QObject):
         progressPercentage = round((self.currentPathNumber / self.totalNumberOfVPaths) * 100)
 
         self.progress.emit(progressPercentage)
-        self.newMessageForLogPanel.emit(f"[{"+" if response == "success" else "-"}] {path} -- {response}\n")
+        self.newMessageForLogPanel.emit(f"[{'+' if response == 'success' else '-'}] {path} -- {response}\n")
 
       return displayResults()
 

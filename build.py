@@ -26,6 +26,7 @@ command = [
 
   # compiler options
   "--mingw64", # use mingw64 compiler
+  "--assume-yes-for-downloads", # auto-download the required mingw64 gcc (no interactive prompt)
   "--enable-plugin=pyqt5", # enable pyqt5 plugin (critical for pyqt5 apps)
 
   # output configuration
