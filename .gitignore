@@ -1,0 +1,10 @@
+# ---> PYTHON
+__pycache__
+
+# pyenv
+.venv
+
+# ---> CUSTOM
+# distribution / packaging
+dist/*
+!dist/.gitkeep

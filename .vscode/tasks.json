@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Convert UI to PY",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "if (-not (Test-Path -Path '${workspaceFolder}/gui.py')) { \"${workspaceFolder}/.venv/Scripts/pyuic5\" ./ui/gui.ui -o ./gui.py --from-imports; (Get-Content ./gui.py) -notmatch 'import resources_rc' | Set-Content ./gui.py }",
+        "if (-not (Test-Path -Path '${workspaceFolder}/modules/resources.py')) { \"${workspaceFolder}/.venv/Scripts/pyrcc5\" ./res/qrc/resources.qrc -o ./modules/resources.py }"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "Convert UI to Python only if gui.py doesn't exist"
+    },
+    {
+      "label": "Build with Nuitka",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "build.py"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compilation using Nuitka"
+    }
+  ]
+}
